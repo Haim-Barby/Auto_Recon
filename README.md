@@ -1,6 +1,6 @@
 # Auto_Recon
 
-A Python-based security analysis tool by Haim_Barby, performing comprehensive reconnaissance on target URLs. Auto_Recon provides insights into DNS records, WHOIS data, security headers, SSL certificates, subdomains, and more.
+A Python-based security analysis tool by Haim_Barby, enabling **one-click comprehensive reconnaissance** on target URLs. **Auto_Recon** provides insights into DNS records, WHOIS data, security headers, SSL certificates, subdomains, and more.
 
 ## Features
 
@@ -15,39 +15,41 @@ A Python-based security analysis tool by Haim_Barby, performing comprehensive re
 
 Before running, make sure you have Python 3 and required packages installed. Clone the repository and set up the environment as follows:
 
-\```bash
-# Clone the repository
+#### Clone the repository
+```bash
 git clone https://github.com/Haim_Barby/Auto_Recon.git
 cd Auto_Recon
-
-# Set up a virtual environment (optional but recommended)
+```
+#### Set up a virtual environment (optional but recommended)
+```bash
 python3 -m venv venv
 source venv/bin/activate
-
-# Install dependencies
+```
+#### Install dependencies
+```bash
 pip install -r requirements.txt
-\```
+```
 
 ## Usage
 
 Run the tool by executing the following command:
 
-\```bash
+```bash
 ./Auto_Recon.py
-\```
+```
 
 You will be prompted to enter a target URL and optionally a HaveIBeenPwned API key for additional breach information. For example:
 
-\```plaintext
+```plaintext
    █▄▄ ▄▀█ █▀█     █▀█     █▀▀ █ █▄░█
    █▄█ █▀█ █▀▄ █▄▄     █▄▀     █ █░▀█
 Enter target URL: example.com
 Enter HaveIBeenPwned API key (optional): YOUR_API_KEY
-\```
+```
 
 ### Example Output
 
-\```plaintext
+```plaintext
 ════════════════════ DNS Records Analysis ════════════════════
 [+] A Records: 192.168.1.1
 [+] MX Records: Priority: 10, Server: mail.example.com
@@ -56,7 +58,7 @@ Enter HaveIBeenPwned API key (optional): YOUR_API_KEY
 [+] Domain Name: example.com
 [+] Registrar: Example Registrar Inc.
 ...
-\```
+```
 
 ## Notes
 
